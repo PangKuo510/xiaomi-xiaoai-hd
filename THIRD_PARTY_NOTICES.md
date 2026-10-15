@@ -8,7 +8,7 @@
 - 本次匯入：2026-10-15；103 個 Git 追蹤檔，497,737 bytes。
 - 放置位置：[vendor/open-xiaoai](vendor/open-xiaoai/)，保留原始路徑與原始碼，未作 HD 修改。
 - 授權全文：[上游 MIT LICENSE](vendor/open-xiaoai/LICENSE)，含 Copyright (c) 2024 Del Wang。
-- 其他聲明：[原始 README](vendor/open-xiaoai/README.md)、[原始 agreement.md](vendor/open-xiaoai/agreement.md)。二者的用途限制與 MIT 的不一致，詳見[授權評估](docs/UPSTREAM_LICENSE_REVIEW.md)。
+- 其他聲明：[原始 README](vendor/open-xiaoai/README.md)、[原始 agreement.md](vendor/open-xiaoai/agreement.md)。二者的用途限制與 MIT 的不一致，詳見[文件 01：授權與來源](docs/01-upstream-license.md)。
 
 本倉庫不以自身授權取代上述原作者權利或聲明。原作者未對本專案提供 HD 相容性承諾或背書。
 

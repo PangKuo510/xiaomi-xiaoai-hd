@@ -1,4 +1,4 @@
-# Client／Server 共用範圍與 HD 適配清單
+# 03｜Client／Server 共用範圍與 HD 適配
 
 日期：2026-10-15。基礎：固定上游 commit `bc3396c64e2a435f354eb5cb12a203981f1fe422`；HD 資訊仍是 2026-10-09 快照。本輪只有離線整理，沒有連音箱、安裝、錄音或改驅動。
 
@@ -51,14 +51,14 @@ vendor/open-xiaoai/
 
 下一階段把共用的 WebSocket／RPC 保留為 protocol，把 HD 設備行為抽成 adapter：識別、能力查詢、狀態、URL 播放、TTS、事件、capture profile。Vendor 保持原樣，HD adapter 才加入經驗證的方法。
 
-初始能力限 `get_version`／`get_model`／`get_status`。現已在獨立的 packages/hd-handshake 與 host/handshake_server.py 實作三項白名單握手，錄音、原始 PCM 播放、原廠前端控制、任意 shell 與開機環境寫入均沒有對應 handler。這個隔離只適用新入口，不適用仍保持原樣的 vendor 範例；尚未在 HD 執行。
+初始能力限 `get_version`／`get_model`／`get_status`。獨立的 `packages/hd-handshake` 與 `host/handshake_server.py` 只實作這三項查詢，沒有錄音、PCM 播放、原廠前端控制、任意 shell 或開機環境寫入 handler。這項限制只適用新入口，不適用仍保持原樣的 vendor 範例。新 Client 已在 HD 實機完成一次唯讀握手，詳見[文件 08](08-hd-live-readonly-test.md)；音訊與自動啟動仍未測。
 
 ## 驗收順序
 
 1. 離線 manifest、路徑與來源完整性（本次完成）。
 2. 上游完整 library／Server 建置尚未做；獨立 HD 握手 Client 已在本地 x86_64 Linux 建置並與 Python Server 測試。
-3. 無音訊副作用的能力握手 mock 測試完成，HD 實機尚未做。
-4. 原生 URL 播放、停止、恢復（未做）。
+3. mock 測試及一次 HD 實機唯讀握手均已完成；實機結果見[文件 08](08-hd-live-readonly-test.md)。
+4. 原生 URL 播放、停止、恢復尚未測；測試順序與停止條件見[文件 09](09-native-url-playback-plan.md)。
 5. HD 事件與短錄音適配（未做）。
 6. 長時間資源測試，最後才處理 /data/init.sh（未做）。
 

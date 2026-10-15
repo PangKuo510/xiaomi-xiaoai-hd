@@ -1,4 +1,4 @@
-# 唯讀握手 v0.1 本地測試
+# 05｜唯讀握手本地驗證
 
 日期：2026-10-15。
 
@@ -19,9 +19,8 @@ Python／WebSocket：三項查詢完整往返；連線前後沒有主動事件�
 ## 實務界線
 
 - 未連線、安裝或執行於 HD；未錄音、播放、改音量、設定、Driver 或分區。
-- 本文件的初始測試為 native x86_64；後續已完成 ARM32 hard-float 交叉編譯、glibc 2.25 符號／HD 執行庫與 QEMU 驗證，見 [ARM_CROSS_BUILD.md](ARM_CROSS_BUILD.md)。實機 RAM／CPU 驗證仍未做。
-- 真實 backend 的固定 ubus 呼叫尚未由這個 binary 在 HD 驗證；它引用的是先前成功的唯讀查詢方法。
+- 本文件記錄的是本地 x86_64、ARM QEMU 與 mock 測試；交叉編譯詳見[文件 07](07-arm-build.md)。HD 實機的 RAM 數值和固定 ubus 呼叫後來已由一次受控握手實測，詳見[文件 08](08-hd-live-readonly-test.md)。
 - Cargo fmt 在本機工具鏈缺少子命令，因此未完成 formatter 檢查；沒有為此另裝系統元件。建置與功能測試已通過。
 - 本地功能測試不取代長時間運行、重新連線、TLS／認證與 NAS 部署驗收。
 
-重現命令見 [HD_HANDSHAKE.md](HD_HANDSHAKE.md)。
+重現命令見[文件 04](04-read-only-handshake.md)。本地測試不代替實機結果；實機測試也不代表長時間或音訊功能已驗收。

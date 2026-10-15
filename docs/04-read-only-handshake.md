@@ -1,4 +1,4 @@
-# HD 唯讀能力握手 v0.1
+# 04｜HD 唯讀能力握手 v0.1
 
 本次實作為獨立 Rust Client `packages/hd-handshake` 與 Python Server `host/handshake_server.py`。採用上游同型的 JSON Request／Response 外層格式，但不載入 vendor 的 Client、SpeakerManager 或範例 Server，因此不繼承其啟動音訊、任意 shell 與寫入功能。這是縮減能力的新入口，不是整套上游 RPC 的相容替代品。
 
@@ -21,7 +21,7 @@
 - Server 與 Client v0.1 只允許 loopback，沒有 LAN 模式、探索、持久保存或自動啟動。
 - 每 session 最多 16 個 frame 迴圈；大小 8192 bytes，連線／閒置／RPC 有逾時。
 - `--mock` 使用程式內明確標示的模擬資料；不讀實機檔案、不呼叫 ubus。
-- 真實 backend 尚未安裝／執行於 HD。已另完成 ARM32／glibc 2.25 建置與 QEMU mock 驗證，見 [ARM_CROSS_BUILD.md](ARM_CROSS_BUILD.md)；尚未驗證實機 Kernel、資源或 ubus。
+- ARM32／glibc 2.25 建置與 QEMU mock 驗證已完成；其後也在 HD 實機以真實 backend 完成一次三項查詢並退出，詳見[文件 08](08-hd-live-readonly-test.md)。這項結果只涵蓋該次查詢，未測長期執行、重連或其他機型。
 
 沒有啟用認證／TLS，所以本版刻意不開放 LAN。後續部署需要另外設計受控連線方式，不能直接放寬為所有網路介面。
 
@@ -48,4 +48,4 @@ packages/hd-handshake/target/debug/hd-handshake --mock
 
 Server 的 console 只列成功／模擬標記／查詢名稱，不印連線位址或原始裝置狀態。測試只在 loopback 使用臨時埠，模擬 M01，不能當作已完成實機端到端驗收。
 
-驗證結果與隱私檢查見 [HANDSHAKE_VALIDATION.md](HANDSHAKE_VALIDATION.md) 與 [PRIVACY_REVIEW.md](PRIVACY_REVIEW.md)。
+本地測試見[文件 05](05-local-validation.md)，實機結果見[文件 08](08-hd-live-readonly-test.md)，隱私檢查見[文件 10](10-privacy-review.md)。

@@ -1,4 +1,4 @@
-# HD 與 Pro（LX06）的差異化改機指南
+# 06｜HD 與 Pro（LX06）的改機差異
 
 整理：2026-10-15。對象僅為 XMYX01JY／M01；裝置狀態引用 2026-10-09 的實機與備份快照。此文件不對其他 HD 硬體版本、Pro 新版或 OH2P 作相容性承諾。
 
@@ -49,13 +49,13 @@ HD 曾使用的幾何為 eraseblock 131072、page 2048、OOB 64 bytes；相應 U
 ## 4. 已有 SSH 的 HD：本次應走的路線
 
 1. 保持現有 boot／system／data 配置；不重做 SSH patch，也不修改 bootdelay／boot_part。
-2. 先在本地執行 [唯讀握手版本](HD_HANDSHAKE.md) 的 mock 測試。
+2. 先在本地執行[文件 04](04-read-only-handshake.md)的 mock 測試。
 3. 此版本只允許 get_version／get_model／get_status；不存在音訊、任意 shell、OTA、分區寫入或前端控制 RPC。
-4. ARM32／glibc 2.25 交叉編譯、二進位格式／依賴／大小與 QEMU mock 驗證已完成，見 [ARM_CROSS_BUILD.md](ARM_CROSS_BUILD.md)；受控實機連線、Kernel／ubus 及資源相容仍未驗證。
-5. 後續即使部署，也應先暫存、手動執行並可退出，驗證後才討論 /data/init.sh。此次不部署，也不提供自啟安裝器。
+4. ARM32／glibc 2.25 交叉編譯與 QEMU mock 驗證已完成；另已在 HD 實機完成一次版本、機型、狀態查詢及退出，見[文件 07](07-arm-build.md)與[文件 08](08-hd-live-readonly-test.md)。單次成功不等於長期執行、重連或其他機型已驗證。
+5. 若日後部署其他功能，先暫存、手動執行並確認可退出；完成驗收前不設定 /data/init.sh。
 
 ## 5. 本文件涵蓋與未涵蓋
 
 已涵蓋 HD／Pro 差異、SSH-only 六檔範圍、打包／分區確認原則，以及已有 SSH 後的演進方式。尚未提供完整 Bootloader 恢復、可直接刷寫的映像、板級 UART／USB 接線圖、實測音質調整參數或 HD 音訊 Client。
 
-Client／Server 的逐模組差異見 [HD_ADAPTATION.md](HD_ADAPTATION.md)；來源與授權見 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。
+Client／Server 的逐模組差異見[文件 03](03-client-server-adaptation.md)；來源與授權見 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。

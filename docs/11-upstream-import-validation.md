@@ -1,4 +1,4 @@
-# 上游來源匯入驗證
+# 11｜上游來源匯入驗證
 
 日期：2026-10-15。
 
@@ -18,7 +18,7 @@
 - NAS 部署、HD 安裝、錄音／播放、驅動或 DSP 相容性。
 - 依賴完整授權 SBOM 與發布產物的授權清單。
 
-來源匯入階段沒有使用 Cargo，以上結果仍不等於上游完整程式建置或端到端成功。後續已確認 WSL 有可用 Rust 工具鏈，並完成獨立 HD 握手程式的本地建置／mock 測試，見 [HANDSHAKE_VALIDATION.md](HANDSHAKE_VALIDATION.md)；未建置或執行 vendor 的完整 Client／Server。
+來源匯入階段沒有使用 Cargo，以上結果不代表上游完整程式建置或端到端成功。之後已完成獨立 HD 握手程式的本地建置／mock 測試，見[文件 05](05-local-validation.md)；上游完整 Client／Server 仍未建置或執行。
 
 ## 重現
 

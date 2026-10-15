@@ -1,4 +1,4 @@
-# HD ARM32／glibc 2.25 交叉編譯與本地驗證
+# 07｜HD ARM32／glibc 2.25 建置與本地驗證
 
 日期：2026-10-15。程式：HD 唯讀握手 Client v0.1.0。
 
@@ -63,7 +63,7 @@ python3 tools/inspect_arm_client.py \
 sh tools/test_arm_qemu.sh
 ```
 
-需先依 [HD_HANDSHAKE.md](HD_HANDSHAKE.md) 建立 Python 測試 venv。`qemu-arm` 以明確命令啟動，不依賴系統 binfmt 自動註冊；本次 WSL 套件安裝時 binfmt service 重啟失敗，未修改該服務，直接 user-mode 測試已通過。
+需先依[文件 04](04-read-only-handshake.md)建立 Python 測試 venv。`qemu-arm` 以明確命令啟動，不依賴系統 binfmt 自動註冊；本次 WSL 套件安裝時 binfmt service 重啟失敗，未修改該服務，直接 user-mode 測試已通過。後續實機握手結果見[文件 08](08-hd-live-readonly-test.md)。
 
 ## 本地打包
 
