@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-15",
+  "target": "armv7-unknown-linux-gnueabihf",
+  "requested_glibc_baseline": "2.25",
+  "elf_class": "ELF32",
+  "machine": "ARM",
+  "endianness": "little",
+  "abi": "EABI5 hard-float",
+  "arm_attributes": "Attribute Section: aeabi\nFile Attributes\n  Tag_CPU_arch: v6\n  Tag_ARM_ISA_use: Yes\n  Tag_THUMB_ISA_use: Thumb-1\n  Tag_ABI_align_needed: 8-byte\n  Tag_ABI_align_preserved: 8-byte, except leaf SP\n  Tag_CPU_unaligned_access: None\n  Tag_Virtualization_use: TrustZone",
+  "interpreter": "/lib/ld-linux-armhf.so.3",
+  "bytes": 836968,
+  "sha256": "124537dc946097a99cc8b6784861622508ec35f2b1aa1732b9477e701dc665d4",
+  "direct_dependencies": [
+    "libm.so.6",
+    "libpthread.so.0",
+    "libc.so.6",
+    "libdl.so.2"
+  ],
+  "resolved_runtime_libraries": [
+    "ld-linux-armhf.so.3",
+    "libc.so.6",
+    "libdl.so.2",
+    "libm.so.6",
+    "libpthread.so.0"
+  ],
+  "glibc_versions_required": [
+    "2.4",
+    "2.7",
+    "2.9",
+    "2.12",
+    "2.15",
+    "2.16",
+    "2.17",
+    "2.18",
+    "2.25"
+  ],
+  "max_glibc_required": "2.25",
+  "missing_dynamic_symbols": [],
+  "checks": {
+    "elf32": true,
+    "arm": true,
+    "little_endian": true,
+    "eabi5": true,
+    "pie": true,
+    "stripped": true,
+    "hard_float": true,
+    "interpreter": true,
+    "glibc_at_most_2_25": true,
+    "no_rpath": true,
+    "no_private_build_paths": true
+  },
+  "errors": [],
+  "device_accessed": false,
+  "limitations": "ELF/symbol checks only; HD hardware, kernel and real backend execution remain untested."
+}

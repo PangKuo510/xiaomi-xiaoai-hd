@@ -14,6 +14,12 @@ WSL_ROOT = '/mnt/d/' + ROOT.as_posix().split(':', 1)[1].lstrip('/') if os.name =
 
 
 def binary_args(*extra):
+    if os.environ.get('HD_TEST_CLIENT_COMMAND'):
+        # Test-only explicit argv override, e.g. qemu-arm + local HD runtime + ARM binary.
+        runner = json.loads(os.environ['HD_TEST_CLIENT_COMMAND'])
+        if not isinstance(runner, list) or not runner or not all(isinstance(s, str) for s in runner):
+            raise ValueError('invalid test runner argv')
+        return runner + list(extra)
     path = WSL_ROOT + '/packages/hd-handshake/target/debug/hd-handshake'
     return (['wsl.exe', '-e', path] if os.name == 'nt' else [path]) + list(extra)
 

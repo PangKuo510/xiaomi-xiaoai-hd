@@ -20,7 +20,7 @@
 - Bootloader 的完整 2 MiB 備份仍有缺口。
 - 尚未安裝或驗證 Open-XiaoAI Client。
 
-本倉庫包含上游來源快照，以及已完成本地 mock 測試的獨立 HD 唯讀握手 v0.1。後者只提供版本、機型、唯讀狀態三項查詢；尚無經 HD ARM32 編譯與實機驗證的可安裝版本。不要把 LX06／OH2P 的分區、映像或錄音設定直接套用到 HD。
+本倉庫包含上游來源快照，以及獨立 HD 唯讀握手 v0.1。後者只提供版本、機型、唯讀狀態三項查詢，已完成 ARM32／glibc 2.25 交叉編譯與 QEMU＋HD 執行庫的本地 mock 測試，尚未安裝或驗證於 HD 實機。不要把 LX06／OH2P 的分區、映像或錄音設定直接套用到 HD。
 
 ## 文件
 
@@ -34,6 +34,7 @@
 - [握手測試結果](docs/HANDSHAKE_VALIDATION.md)
 - [HD 與 Pro 差異化改機指南](docs/HD_MODDING_GUIDE.md)
 - [隱私與金鑰檢查](docs/PRIVACY_REVIEW.md)
+- [ARM32／glibc 2.25 建置與驗證](docs/ARM_CROSS_BUILD.md)
 
 ## 參考專案
 

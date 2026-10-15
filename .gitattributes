@@ -1,2 +1,3 @@
 # Preserve upstream blobs exactly, including lockfiles and line endings.
 vendor/open-xiaoai/** -text
+tools/*.sh text eol=lf

@@ -21,6 +21,8 @@
 
 GitHub 帳號、原作者署名／網站、公開來源 commit 與套件雜湊是刻意保留的公開歸屬資訊，不是內部裝置識別碼。提交作者使用 GitHub noreply 身分；本報告不宣稱倉庫是匿名的。
 
+ARM 產物使用建置路徑 remap，ELF 檢查未發現本機家目錄或專案絕對路徑。打包只含握手 Client、依賴清單／授權與驗證資料；掃描器會展開壓縮檔再逐項檢查。HD runtime libraries 只留本機 ignored cache，不隨產物提交。
+
 ## 可重跑的檢查
 
 ```powershell

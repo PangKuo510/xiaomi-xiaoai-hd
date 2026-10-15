@@ -1,0 +1,22 @@
+{
+  "rust": "1.93.1",
+  "zig": "0.13.0",
+  "downloads": [
+    {
+      "url": "https://static.rust-lang.org/dist/rust-std-1.93.1-armv7-unknown-linux-gnueabihf.tar.xz",
+      "sha256": "c9d8c5789b0de42de6b68ed749ecb603847b1525df3aef1cbeacadb9521ff4f6"
+    },
+    {
+      "url": "https://static.rust-lang.org/dist/rust-std-1.93.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "82c4e41268f1741e4eb68796aeb6ca5042406ae858dd56144155c4ef8d87d8b6"
+    },
+    {
+      "url": "https://static.rust-lang.org/dist/rustc-1.93.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "b9db2636f5a101c4cdaf46a26f8a0c8e4b5767ecdb02ae9c7ccc3ead577732bc"
+    },
+    {
+      "url": "https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz",
+      "sha256": "d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea"
+    }
+  ]
+}

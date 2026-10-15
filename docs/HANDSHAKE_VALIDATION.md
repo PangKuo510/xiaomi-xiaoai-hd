@@ -19,7 +19,7 @@ Python／WebSocket：三項查詢完整往返；連線前後沒有主動事件�
 ## 實務界線
 
 - 未連線、安裝或執行於 HD；未錄音、播放、改音量、設定、Driver 或分區。
-- 未完成 ARM32 hard-float 交叉編譯、glibc 2.25 相容性或二進位大小／RAM 驗證。
+- 本文件的初始測試為 native x86_64；後續已完成 ARM32 hard-float 交叉編譯、glibc 2.25 符號／HD 執行庫與 QEMU 驗證，見 [ARM_CROSS_BUILD.md](ARM_CROSS_BUILD.md)。實機 RAM／CPU 驗證仍未做。
 - 真實 backend 的固定 ubus 呼叫尚未由這個 binary 在 HD 驗證；它引用的是先前成功的唯讀查詢方法。
 - Cargo fmt 在本機工具鏈缺少子命令，因此未完成 formatter 檢查；沒有為此另裝系統元件。建置與功能測試已通過。
 - 本地功能測試不取代長時間運行、重新連線、TLS／認證與 NAS 部署驗收。

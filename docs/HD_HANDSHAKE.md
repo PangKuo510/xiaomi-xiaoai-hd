@@ -21,7 +21,7 @@
 - Server 與 Client v0.1 只允許 loopback，沒有 LAN 模式、探索、持久保存或自動啟動。
 - 每 session 最多 16 個 frame 迴圈；大小 8192 bytes，連線／閒置／RPC 有逾時。
 - `--mock` 使用程式內明確標示的模擬資料；不讀實機檔案、不呼叫 ubus。
-- 真實 backend 尚未安裝／執行於 HD；本地 x86_64 Linux 編譯不代表 ARM32 ABI、glibc 或資源相容。
+- 真實 backend 尚未安裝／執行於 HD。已另完成 ARM32／glibc 2.25 建置與 QEMU mock 驗證，見 [ARM_CROSS_BUILD.md](ARM_CROSS_BUILD.md)；尚未驗證實機 Kernel、資源或 ubus。
 
 沒有啟用認證／TLS，所以本版刻意不開放 LAN。後續部署需要另外設計受控連線方式，不能直接放寬為所有網路介面。
 

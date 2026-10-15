@@ -32,3 +32,5 @@ __pycache__/
 .venv*/
 target/
 node_modules/
+.local-cross/
+artifacts/

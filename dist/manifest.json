@@ -1,0 +1,9 @@
+{
+  "artifact": "hd-handshake-armv7-glibc225.tar.gz",
+  "bytes": 462770,
+  "sha256": "01a54f6bcbff8776944cd7b29e962a679a6c6e4b7715ba9f626dc359abd45b9c",
+  "client_sha256": "124537dc946097a99cc8b6784861622508ec35f2b1aa1732b9477e701dc665d4",
+  "archive_entries": 99,
+  "cargo_packages_listed": 47,
+  "includes_hd_runtime_libraries": false
+}

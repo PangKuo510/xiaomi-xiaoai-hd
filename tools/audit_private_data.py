@@ -6,6 +6,8 @@ import json
 from pathlib import Path
 import re
 import subprocess
+import io
+import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
 RULES = {
@@ -75,6 +77,16 @@ def main():
             if name:
                 records.append((name, (ROOT/name).read_bytes()))
     findings = []
+    expanded = []
+    for name, data in records:
+        if name.endswith('.tar.gz'):
+            with tarfile.open(fileobj=io.BytesIO(data),mode='r:gz') as archive:
+                for member in archive:
+                    if member.isfile():
+                        if member.size > 8*1024*1024 or len(expanded)>256:
+                            raise SystemExit('Archive exceeds privacy scan bounds')
+                        expanded.append((name+'!/'+member.name,archive.extractfile(member).read()))
+    records.extend(expanded)
     for name, data in records:
         text = data.decode('utf-8', errors='replace')
         source_is_public = public_upstream.get(name) == hashlib.sha256(data).hexdigest()

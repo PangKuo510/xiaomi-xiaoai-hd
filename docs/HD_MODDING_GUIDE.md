@@ -51,7 +51,7 @@ HD 曾使用的幾何為 eraseblock 131072、page 2048、OOB 64 bytes；相應 U
 1. 保持現有 boot／system／data 配置；不重做 SSH patch，也不修改 bootdelay／boot_part。
 2. 先在本地執行 [唯讀握手版本](HD_HANDSHAKE.md) 的 mock 測試。
 3. 此版本只允許 get_version／get_model／get_status；不存在音訊、任意 shell、OTA、分區寫入或前端控制 RPC。
-4. ARM32／glibc 2.25 交叉編譯、二進位 ABI／大小與受控連線方案尚需另外完成；目前只有 x86_64 本地建置驗證。
+4. ARM32／glibc 2.25 交叉編譯、二進位格式／依賴／大小與 QEMU mock 驗證已完成，見 [ARM_CROSS_BUILD.md](ARM_CROSS_BUILD.md)；受控實機連線、Kernel／ubus 及資源相容仍未驗證。
 5. 後續即使部署，也應先暫存、手動執行並可退出，驗證後才討論 /data/init.sh。此次不部署，也不提供自啟安裝器。
 
 ## 5. 本文件涵蓋與未涵蓋
