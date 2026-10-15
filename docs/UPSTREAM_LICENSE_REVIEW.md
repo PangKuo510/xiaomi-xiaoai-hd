@@ -10,7 +10,7 @@
 - [固定版本 README](https://github.com/idootop/open-xiaoai/blob/bc3396c64e2a435f354eb5cb12a203981f1fe422/README.md)
 - [固定版本 agreement.md](https://github.com/idootop/open-xiaoai/blob/bc3396c64e2a435f354eb5cb12a203981f1fe422/agreement.md)
 
-現有本地參考 checkout 的 HEAD 與本輪 git ls-remote 的 main 一致。該 checkout 含本地未追蹤的 patch 目錄，不能直接當作純淨上游整包匯入。本倉庫本次沒有複製任何上游原始碼或執行上游安裝程式。
+現有本地參考 checkout 的 HEAD 與查核時 git ls-remote 的 main 一致。該 checkout 含本地未追蹤的 patch 目錄，因此此次從固定 commit 的 Git blobs 匯入，沒有複製工作目錄中的本地變更。
 
 ## LICENSE：MIT
 
@@ -50,4 +50,4 @@ Fork 不會因上游歸檔而必然失去開發能力，但也不會自動得到
 
 ## 目前落實狀態
 
-本次只建立 HD 文件骨架及來源／授權評估，不接受或代替使用者作額外協議承諾，不重新下載執行上游 Client，也不發布預刷映像。後續原始碼移植應另有具體範圍、HD 適配與驗證紀錄。
+依使用者要求，已將固定版本的 Client 與三組 Server 範例存入 vendor/open-xiaoai，保留完整 LICENSE、README 與 agreement.md，並新增逐檔來源／雜湊 manifest 與適配清單。上游檔案未修改；沒有安裝依賴、執行 Client／Server、連線音箱或發布預刷映像。來源整理不表示已完成 HD 移植或釐清附加條款效力。

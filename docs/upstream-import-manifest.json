@@ -1,0 +1,740 @@
+{
+  "repository": "https://github.com/idootop/open-xiaoai",
+  "commit": "bc3396c64e2a435f354eb5cb12a203981f1fe422",
+  "snapshot_date": "2026-10-15",
+  "vendor_root": "vendor/open-xiaoai",
+  "selection": [
+    "packages/client-rust/",
+    "examples/migpt/",
+    "examples/xiaozhi/",
+    "examples/gemini/",
+    "LICENSE",
+    "README.md",
+    "agreement.md"
+  ],
+  "policy": "Exact upstream Git blobs; local untracked or modified files are not imported.",
+  "status": "Reference source only; not HD-adapted, built, installed, or executed.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_mode": "100644",
+      "git_blob_sha1": "2ae2d26146319136140b7ee9c33466627172f535",
+      "bytes": 1065,
+      "sha256": "9e84b7ec35584499df180c2e037bedb713082b19fd7e8cbf3bdf8a99043c72e6"
+    },
+    {
+      "path": "README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "42264b979ad3a4ee77012ceac8a02d93c4aa2c46",
+      "bytes": 4400,
+      "sha256": "64cfb5a0dbeb91fe1b62696a22a313c300b4ee93f17dc4cf7c03ec4d22c8b517"
+    },
+    {
+      "path": "agreement.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "05d6f5209f3f2b14ecbb4615e7a9c25afb17292a",
+      "bytes": 1764,
+      "sha256": "6f25f1f06433d9aaa4b84c3afa370fdc46c940c58e3228a1bd9fd9df80396196"
+    },
+    {
+      "path": "examples/gemini/.python-version",
+      "git_mode": "100644",
+      "git_blob_sha1": "e4fba2183587225f216eeada4c78dfab6b2e65f5",
+      "bytes": 5,
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    {
+      "path": "examples/gemini/Cargo.lock",
+      "git_mode": "100644",
+      "git_blob_sha1": "917a7777bb181701d08c5450a27dd5ac3d0d0410",
+      "bytes": 23323,
+      "sha256": "c2757e578db1f8359e054a77abc382a3552741621b946e5928bb8c270ae6d90e"
+    },
+    {
+      "path": "examples/gemini/Cargo.toml",
+      "git_mode": "100644",
+      "git_blob_sha1": "cb669da710148839b370e512f4dc679f1782771e",
+      "bytes": 526,
+      "sha256": "76d8d7dfa90fdf6db4dc5db2f7a1aa80a7aa67c23319bd7419a11058bfd56a15"
+    },
+    {
+      "path": "examples/gemini/README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "8d2a14c706a2e9f8383e15a8f1869a4068c88968",
+      "bytes": 1351,
+      "sha256": "49d959d8b00cfdde253ab1c8b078a20219e18601f90c69a11933555d09f4bc5f"
+    },
+    {
+      "path": "examples/gemini/gemini/__init__.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "fd00eac0bd73f3b9e4ea679aed75c66c52421876",
+      "bytes": 86,
+      "sha256": "c60e94a2e9f76dd2dec200174e3873456331fb61faaef87d50f2b6b528814a44"
+    },
+    {
+      "path": "examples/gemini/gemini/gemini.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "06921d82bea45f79c83d237e40d8c1ba687968b5",
+      "bytes": 3168,
+      "sha256": "c827d3838e9295e4236950f6eccf1f5c4b17a1ef17a50261b907be8b52e1eef9"
+    },
+    {
+      "path": "examples/gemini/gemini/xiaoai.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "dbe9f68326004923321a78fa8ca7728643001750",
+      "bytes": 1650,
+      "sha256": "4c4ae1081721027594e7470c56c494cfe681830d38807831cde971a5a34e834b"
+    },
+    {
+      "path": "examples/gemini/main.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "ca6bfeb310bdec78f43b9d604e1d2a07ae6c66d1",
+      "bytes": 431,
+      "sha256": "7d58510a57963521ac9dee3d5e2d27e0e77a00dff1d6dd2ab735257821887aaf"
+    },
+    {
+      "path": "examples/gemini/pyproject.toml",
+      "git_mode": "100644",
+      "git_blob_sha1": "fe11bb02099473a345b6356f5f2471e5b7013b4d",
+      "bytes": 658,
+      "sha256": "29a3da73cb7c10a1ec068fc2c10db55ba65e90c054466623d48cbcf1ce5df72f"
+    },
+    {
+      "path": "examples/gemini/src/lib.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "5bf43ccea52804dde1869ad2176c9977732431f2",
+      "bytes": 958,
+      "sha256": "c29895b67a0a003f3d44937321ec07c7b0e6224358d935139d1995032d808f1e"
+    },
+    {
+      "path": "examples/gemini/src/macros.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "d1e1acadbf6b3b7e45aad4f5b1c16839cbaaab23",
+      "bytes": 343,
+      "sha256": "d8c33fa41f0ac22efdb88d345f6db6d7c0eb9103b28000672c9030f07cc1ccde"
+    },
+    {
+      "path": "examples/gemini/src/python.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "ef4ead590ae35823f6c5efc36f7629a94584fa1f",
+      "bytes": 2160,
+      "sha256": "a406ba35af1641646b5fba1e357a22efa4897de84f47cbc7dbe91e950f862804"
+    },
+    {
+      "path": "examples/gemini/src/server.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "b8398f4c48b8a8f04cdf9352ef0fc2febb412125",
+      "bytes": 4138,
+      "sha256": "1cbfaab6f1fa97a4a77daf9986d1fd0b55d90b5c1b229a2292d0347af29bb314"
+    },
+    {
+      "path": "examples/gemini/uv.lock",
+      "git_mode": "100644",
+      "git_blob_sha1": "8c82c4cf7f6a8721fd10bc0e5e3fc8d99c742a60",
+      "bytes": 51465,
+      "sha256": "df3dd304d3d3fbbaf5a10a90ba65b456e989d450decc748a58d0048f059da36c"
+    },
+    {
+      "path": "examples/migpt/Cargo.lock",
+      "git_mode": "100644",
+      "git_blob_sha1": "2b95abdfeef36ee7f36453d847af8ee6604ec70b",
+      "bytes": 22316,
+      "sha256": "6f83a26217e99e081e6eb4c80de2c9c5eab2b7ea29fc44971c19efd117020bd8"
+    },
+    {
+      "path": "examples/migpt/Cargo.toml",
+      "git_mode": "100644",
+      "git_blob_sha1": "a7aa9e43f557332e141e9531d44a465eecf0a615",
+      "bytes": 452,
+      "sha256": "fab74ad0ac0e343f1c3bc443c7fe76d3b7f1cc866156688a83f807b1fa0b9f18"
+    },
+    {
+      "path": "examples/migpt/Dockerfile",
+      "git_mode": "100644",
+      "git_blob_sha1": "274ca1078d8733522fdfde30f780004906310dfe",
+      "bytes": 1800,
+      "sha256": "d7cac451a587c6c44f9ed43d4295de170500f847e526c7bc79d0cfe6be72920e"
+    },
+    {
+      "path": "examples/migpt/README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "505b9215ca16da3da5ab18cc2a860d573caf1a62",
+      "bytes": 2872,
+      "sha256": "d51adfbfe8d8de401b4248241c6e45271df7fe02653620c7b6d3f7f4261b356a"
+    },
+    {
+      "path": "examples/migpt/config.ts",
+      "git_mode": "100644",
+      "git_blob_sha1": "0d49f1d8a6a188e90f5da5b69d9d73319fc78a09",
+      "bytes": 2175,
+      "sha256": "da452681a4d80aa92c6974a23d24be5b8cba8ac2633ddfe9b8853d10f14bd17b"
+    },
+    {
+      "path": "examples/migpt/migpt/index.ts",
+      "git_mode": "100644",
+      "git_blob_sha1": "b8670d8af9cacbd633935dacce710abef20d356f",
+      "bytes": 189,
+      "sha256": "72ad20085c0865e3ef884caf684073cd6d94c921afc5ae6545b99b4991843b9d"
+    },
+    {
+      "path": "examples/migpt/migpt/open-xiaoai.ts",
+      "git_mode": "100644",
+      "git_blob_sha1": "396bdbd48c1cd4c01b82787082c8fd092c1a6888",
+      "bytes": 125,
+      "sha256": "2715967c04195aa00a5ef6e8df1d038bbdee0f9f1f507b5054ade8cd7fbe3cc4"
+    },
+    {
+      "path": "examples/migpt/migpt/speaker.ts",
+      "git_mode": "100644",
+      "git_blob_sha1": "7d17433a3c970a87443f1204081684609bddec80",
+      "bytes": 5433,
+      "sha256": "b55c4958459cd8a1e6ce5f10a565fae116e3ad6e1a5c903d183e5a47960b5d3b"
+    },
+    {
+      "path": "examples/migpt/migpt/xiaoai.ts",
+      "git_mode": "100644",
+      "git_blob_sha1": "ea1348caf5a2f1ffc3cb80d70958a95e0c78398c",
+      "bytes": 2105,
+      "sha256": "b4bc0ec06101377d9759787c871f28f31e0228d7e9da430dd6449c13bfda7850"
+    },
+    {
+      "path": "examples/migpt/package.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "1b5e733f0ba8eed97df9620fd9bec06b4801a0b9",
+      "bytes": 748,
+      "sha256": "447580af248d51a17187333944045470cf90c5fac6421e11f97c06b27f4633c3"
+    },
+    {
+      "path": "examples/migpt/pnpm-lock.yaml",
+      "git_mode": "100644",
+      "git_blob_sha1": "a076a5abe89486b38765c4ececb055301db5b10c",
+      "bytes": 32199,
+      "sha256": "83cc6f731c20bfde258d872cca778db8869e28b0b2da089c0744caaa8956f3fd"
+    },
+    {
+      "path": "examples/migpt/src/lib.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "08321a1b58764c8246304612bb6e81734f4c781b",
+      "bytes": 1103,
+      "sha256": "f57a7a0eaeda8b8aacf086ee51bfbeacc7efefb084fae102ae870c87d7433d07"
+    },
+    {
+      "path": "examples/migpt/src/node.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "de13d895920203d0abdbd34eb0aa487934fe1a0e",
+      "bytes": 2831,
+      "sha256": "2e63019a838def2ed9a4fee453615e7881632439ceae9432a34d2a02bdb11801"
+    },
+    {
+      "path": "examples/migpt/src/runtime.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "e7b63fc8688aaa68da5cc84cf461fe7bd8a44ace",
+      "bytes": 367,
+      "sha256": "bc7cd09f2cf24fff5b9a02bb61b92af33b29c69c8338454ac69e395538ea8940"
+    },
+    {
+      "path": "examples/migpt/src/server.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "c02e1d9d8adb79c57d3ce31c764f555fd00c4d7a",
+      "bytes": 3784,
+      "sha256": "97756d57d61ce50d1100300259b08fb50870f82f2d0d4a0729c1fbf303746a32"
+    },
+    {
+      "path": "examples/migpt/tsconfig.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "2add43b984f06566030034729adf5f8afaeecd66",
+      "bytes": 207,
+      "sha256": "a4bc31cf2299312e61972a0a3cb6062a8725f1d47cadc05d4e32a3e3b862b0ab"
+    },
+    {
+      "path": "examples/xiaozhi/.python-version",
+      "git_mode": "100644",
+      "git_blob_sha1": "e4fba2183587225f216eeada4c78dfab6b2e65f5",
+      "bytes": 5,
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    {
+      "path": "examples/xiaozhi/.vscode/launch.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "121233c9e38bedfa5c7082f9e0cc9dfe8978b1d2",
+      "bytes": 638,
+      "sha256": "346cd49d8da0fe5ef449dfe2bad37cf853e40564b8c65475642132c8ca5e4269"
+    },
+    {
+      "path": "examples/xiaozhi/.vscode/settings.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "ab872ba42fc7dfe9891bc0a2df7b608fa684b1bb",
+      "bytes": 551,
+      "sha256": "0d783769c137d065dbcc17b525e9415348c6538e1a9326334058fddc776ca02e"
+    },
+    {
+      "path": "examples/xiaozhi/Cargo.lock",
+      "git_mode": "100644",
+      "git_blob_sha1": "1f906fe89f2a82a69139c87cc1328f80f8ee1336",
+      "bytes": 30123,
+      "sha256": "b1c547d77c64c01b8bdf527e432b1a4cb5ea5ea0040149fd8a92eae65838a50e"
+    },
+    {
+      "path": "examples/xiaozhi/Cargo.toml",
+      "git_mode": "100644",
+      "git_blob_sha1": "cb669da710148839b370e512f4dc679f1782771e",
+      "bytes": 526,
+      "sha256": "76d8d7dfa90fdf6db4dc5db2f7a1aa80a7aa67c23319bd7419a11058bfd56a15"
+    },
+    {
+      "path": "examples/xiaozhi/Dockerfile",
+      "git_mode": "100644",
+      "git_blob_sha1": "30ce3479d1df5068d637db2cd10aef285bffd015",
+      "bytes": 2879,
+      "sha256": "5e1a59171d440f249a0f2881b4bb6f3d8d0e8de9d218bd23ff8a08d70f021ed9"
+    },
+    {
+      "path": "examples/xiaozhi/README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "1ee6c4e0964e6e148ec2ca1274d76da8fb42b7f7",
+      "bytes": 6164,
+      "sha256": "17e0a62e26a913ec090b6141a16a4e3b83299c4acd7faf7d6eb795f38e9e3a02"
+    },
+    {
+      "path": "examples/xiaozhi/config.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "0db3c87c9e49681ab64154d2f197e21960d61e77",
+      "bytes": 2262,
+      "sha256": "a2d3ef592861ac0e953ac3a7f14048e911305f2f2d88b838ee2ca2ceca85a28c"
+    },
+    {
+      "path": "examples/xiaozhi/main.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "e978b21a82516cbcfe5d89dd064c30801835d8ca",
+      "bytes": 435,
+      "sha256": "f03437711374388ef9ad812f5d9e0cd6c9f5ead4ef659f9903e71672abcaf3b3"
+    },
+    {
+      "path": "examples/xiaozhi/pyproject.toml",
+      "git_mode": "100644",
+      "git_blob_sha1": "d46525c02e54c2175d41cf2fb7a66762f4d39377",
+      "bytes": 782,
+      "sha256": "91a1edb2277b8176eaa3cf9942016769cbae63873d098cfb516823f0c80dd329"
+    },
+    {
+      "path": "examples/xiaozhi/scripts/boot.sh",
+      "git_mode": "100644",
+      "git_blob_sha1": "9dacd615c5c6cd6cc829d21a2cb534bea463220b",
+      "bytes": 1082,
+      "sha256": "f5ae0ae2026b25e951f0c842131656fb7516dc7992183f4147c6744ffdb98ba7"
+    },
+    {
+      "path": "examples/xiaozhi/scripts/init.sh",
+      "git_mode": "100644",
+      "git_blob_sha1": "dc755e0f7e64431480de3b88ba2b2c5d0b44bfa9",
+      "bytes": 627,
+      "sha256": "0789cfa8bc7c2d0e91df235b32c59989264062453a53e98a3746edb4e497d2f1"
+    },
+    {
+      "path": "examples/xiaozhi/src/lib.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "cce4998fd6be76679022c4d2e3dd4622475a77e0",
+      "bytes": 1659,
+      "sha256": "475e3fc9ca791fdd4c9a2a542c9018e216cea3c3f662aca648c3a23206351844"
+    },
+    {
+      "path": "examples/xiaozhi/src/macros.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "d1e1acadbf6b3b7e45aad4f5b1c16839cbaaab23",
+      "bytes": 343,
+      "sha256": "d8c33fa41f0ac22efdb88d345f6db6d7c0eb9103b28000672c9030f07cc1ccde"
+    },
+    {
+      "path": "examples/xiaozhi/src/python.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "ef4ead590ae35823f6c5efc36f7629a94584fa1f",
+      "bytes": 2160,
+      "sha256": "a406ba35af1641646b5fba1e357a22efa4897de84f47cbc7dbe91e950f862804"
+    },
+    {
+      "path": "examples/xiaozhi/src/server.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "225cc2060f3439d852258d0139db5e122fa2dc92",
+      "bytes": 4305,
+      "sha256": "0bb6d718023eedb36b6efc099bd8fc498bbfe917bbd2b94ab0edb6274dd64afe"
+    },
+    {
+      "path": "examples/xiaozhi/uv.lock",
+      "git_mode": "100644",
+      "git_blob_sha1": "180f0ad0c29349a503a17cbcd498bfd02b00bd20",
+      "bytes": 97094,
+      "sha256": "2d574e5d938318779024cefadf173de99eda3e51bda9a0169daf327c1f6b6b70"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/event.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "a9713320e69930d36a9163f7b994d9ad3af1227e",
+      "bytes": 5245,
+      "sha256": "ded12c9810362fd0a5a83ab9d84cab7b85729801c7b1a65c8de0971720271502"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/models/keywords.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "ab93a7e8a6711d3e871fb7ae025b86027013026b",
+      "bytes": 184,
+      "sha256": "e3071bb075152db53da9a270450ecfb0485c3a816712fb533db81325bbc21518"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/ref.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "de86a32124f56dc49d3daf23b395280f62c79f18",
+      "bytes": 1033,
+      "sha256": "1c55cda8a47050037a76020d22445b948345d5c3404ae984e69500045d1b351c"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/audio/codec.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "26ee6a1445189d48ba2eb75bdc7cf3aedd6dc419",
+      "bytes": 5873,
+      "sha256": "26b8da81df245673630623af8aa1110604e131061c9dc3cec645e7ea9930a144"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/audio/kws/__init__.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "425751d2afde60634bc05fcf11c246f7396a7f7c",
+      "bytes": 2269,
+      "sha256": "147ecd394e9a07ee804d72c541ed281a22d37fe04008c32e0ae0a0fbbd8763d6"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/audio/kws/keywords.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "a1d6f2bf4f64b2cb43146701d8d2dd05facd8e76",
+      "bytes": 1307,
+      "sha256": "32ae0da61727f5385a912bfc1d1dc8ffc9d1e9dd69ba1ce2747ecd4331f62bfc"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/audio/kws/sherpa.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "b9d231b64d47d6be5819ff269c40ca0accf31214",
+      "bytes": 1264,
+      "sha256": "b81eef6905d7201c90fdf78d1f47215b1fae0c2b008c5f08a7e78985b0df63d5"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/audio/stream.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "a5a7489c54f5d9ad23dc9f26c2591f5ca88f2991",
+      "bytes": 5228,
+      "sha256": "5449a047bc9a7224c896d4a02104a97322a4739f08d0615c90eb4c61e851e7a4"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/audio/vad/__init__.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "cc7abb07c86f58399e585e89a4f46e8981da5881",
+      "bytes": 5394,
+      "sha256": "c8191a7310e972e860a17d01fe2ba0b1dc01da1cb46f07734b856ba5a80d6792"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/audio/vad/silero.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "b6de26ffe366f22b962996e2ce5a92ffc5d63c3e",
+      "bytes": 3230,
+      "sha256": "f023c616d7f7a7b4cdeabb1b73175ed3240d5e5e8b89f6ddf9072388aec9f16e"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/display/base_display.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "5e197c9d1c70e49ab50506b58322ff2397e56d03",
+      "bytes": 1216,
+      "sha256": "ce460dd3b7766925a47cd76a3f70ef01f84039aa7080999227744bdbcdcf4175"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/display/gui_display.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "fd8328a2e2d4a885d6b29ef19b58893f0e7011a6",
+      "bytes": 7149,
+      "sha256": "c7a523a72ea4bfd533b436cf13514d771051d3a7ee2f5131e0ecd7e952b7bbb8"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/display/no_display.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "eb5cf7b039fd1bb9499eab0cee8b21a884ac09ba",
+      "bytes": 934,
+      "sha256": "96a6a3961ec0e83b47dc76220bd5262b753a47fe27612a308fce8796951292fb"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/protocols/protocol.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "56a6dc9d40c1f2e086aacf025a4fba43a8c18c8c",
+      "bytes": 2729,
+      "sha256": "96977212958686f795aacb75664f418eda11607b0a1ee4abcc7b48746dd7b1d0"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/protocols/typing.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "499288d7c6c543c9dc20103b067fa6924e2b8b1c",
+      "bytes": 700,
+      "sha256": "a1a4a9ae04628845ad0906aeceae94e17286f7a72e21a5506fd15986690caf9a"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/protocols/websocket_protocol.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "e4546f1f096cb41ea1a2f1452ba264305fd84b1a",
+      "bytes": 7502,
+      "sha256": "ec73b8877dce5943838e00d557acc89ff2e9f053ba70db464e6f4a019b5a72c6"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/services/speaker.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "a17a616cb42f42aef93b762eb0cd59cb2432372f",
+      "bytes": 6016,
+      "sha256": "9416a304ec61358cf0d1397fb8d3f7054805dfe9182ae3f0729aab559ba92dd0"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/utils/base.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "b8ee7143526446360f5d75056c2c383604d5bd50",
+      "bytes": 643,
+      "sha256": "cf34cff1a76f817c5942673451fcad25012ce7fbbe7f6d06ce1c5393a1a47b5f"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/utils/config.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "39b6db4ae481f4ee7bba8e6514864c39bc411448",
+      "bytes": 6905,
+      "sha256": "d850dd6043bcc11404189d94b39b56f47c6c9a5441ce998ab74da03e6179b3ed"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/utils/file.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "54b9a4af028e4fefa39de0e1a1c66015a6f8a3db",
+      "bytes": 430,
+      "sha256": "942200f144b8df0c0109d818f18344bc506b963607ce7c32fca4622c5ad36be1"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/xiaoai.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "38d0af85061dd4e3dd2111512d07a068f4ade241",
+      "bytes": 4019,
+      "sha256": "4b86adcf5535f676e81aadf3e4ac24ca4d986023d336959156e90bf7e9111d9e"
+    },
+    {
+      "path": "examples/xiaozhi/xiaozhi/xiaozhi.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "5ad1b40680fc6d163669ca55bee00907c454caf7",
+      "bytes": 15782,
+      "sha256": "60cf9de227d280d255faa43c7afbd8a7ad496d2382eb3e0683355dfd7d4f720f"
+    },
+    {
+      "path": "packages/client-rust/.gitignore",
+      "git_mode": "100644",
+      "git_blob_sha1": "face8bf4cef99de5ac366b87b1a94cc8162f1f0a",
+      "bytes": 12,
+      "sha256": "a94d5b75123e3dcd0e8aab14737353bb149b64c6c417ea29245af101589220c0"
+    },
+    {
+      "path": "packages/client-rust/Cargo.lock",
+      "git_mode": "100644",
+      "git_blob_sha1": "b9eb7139ca1d36ee0c340efa87743d42df02eada",
+      "bytes": 21319,
+      "sha256": "bd826bc1a4451a1b867ee19f597a23d7a55996a6a39844d4e7b71230be94076f"
+    },
+    {
+      "path": "packages/client-rust/Cargo.toml",
+      "git_mode": "100644",
+      "git_blob_sha1": "08b1e23bb2c2b94984f8a4c5ba59660d93c85ca7",
+      "bytes": 603,
+      "sha256": "cb8b73620e5bccfd69693e2d291b1dc3781eca51a7c5c2bdce2a52cf28378739"
+    },
+    {
+      "path": "packages/client-rust/README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "8d980ff7f2c88beb9cd8e5237ec8492958a562a9",
+      "bytes": 4865,
+      "sha256": "ae27c3f0db58ea85fd06f271c5b0f21116c4ed429fc3cf6ec96611bcd4eef7fc"
+    },
+    {
+      "path": "packages/client-rust/boot.sh",
+      "git_mode": "100644",
+      "git_blob_sha1": "d046ec03e772f31f9de1989725bd63b6aa58ba35",
+      "bytes": 1249,
+      "sha256": "acb2d2f563db8ebdd9bacbe1cf1789aef65cbadfbd4eab867284dfa005c8fc8b"
+    },
+    {
+      "path": "packages/client-rust/init.sh",
+      "git_mode": "100644",
+      "git_blob_sha1": "e88296c18ddcacec9d3c03dca4990a85fba422d3",
+      "bytes": 1033,
+      "sha256": "9e75482c984dab42e3beadb2152c0f261fe67b5ed159b29dbd225ab908e27d9e"
+    },
+    {
+      "path": "packages/client-rust/src/base.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "92975345f7d35cec0dd65abd41ce65947a32fa1a",
+      "bytes": 102,
+      "sha256": "2c17031c2252f1d7328b5f741a213d8eda92f817b4557f992c7ec22d12e54782"
+    },
+    {
+      "path": "packages/client-rust/src/bin/client.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "1da81a2bdf4a04fe7d2e005edf245087455ab7a5",
+      "bytes": 5772,
+      "sha256": "05c7b5bd7e96be0885e9785e7b2cbec9c3f409e676e0af61cca679035df2b314"
+    },
+    {
+      "path": "packages/client-rust/src/bin/monitor.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "5befc9deeb784ae562fce31472480f2c35957f8c",
+      "bytes": 2054,
+      "sha256": "f4cd9c9301c0f5fb607737d4e36ab9fb5026cb87470e8a3790d14b6feda1262f"
+    },
+    {
+      "path": "packages/client-rust/src/lib.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "cc5f086c09cb1b27cd38028da6d9070e9fee3bda",
+      "bytes": 47,
+      "sha256": "8f5c886177701e251c003d9f4db76eee9ef010a8c898dfff80095462a161ba79"
+    },
+    {
+      "path": "packages/client-rust/src/services/audio/config.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "d1a62da720325707b16b5de2171fce046f15ce50",
+      "bytes": 510,
+      "sha256": "2bfd0b62297e15689399dad8597afed1761ee67c3252b6c39ae2b1e5b448bc1c"
+    },
+    {
+      "path": "packages/client-rust/src/services/audio/mod.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "4709276f2844262b2f814a906c71405e28b43bf9",
+      "bytes": 46,
+      "sha256": "4eb35ab34b7eed2c24a5bb087b18370f2eb1a09fe2a602bb9e0c18094b531d87"
+    },
+    {
+      "path": "packages/client-rust/src/services/audio/play.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "dda55b6ad8af7eeea8a295f3c43062e530aabca0",
+      "bytes": 3685,
+      "sha256": "1a368e417a4c3c00be467f2d8085215a442cb9a30a07b184c530e88cccf853d2"
+    },
+    {
+      "path": "packages/client-rust/src/services/audio/record.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "0c320dbafd448c5305d835b9b959002258aa72fc",
+      "bytes": 5935,
+      "sha256": "19fc217829d327ab2d8ce82b215b8480e6ac561a910a361839ffc7b622417b4c"
+    },
+    {
+      "path": "packages/client-rust/src/services/connect/data.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "c7fe5ff0978fae887c7bc0623c0d5c8f64d45001",
+      "bytes": 2233,
+      "sha256": "dcfa7a36ffc95a3967a01c0619f3684c512cec6031947a800261d297e7cc3043"
+    },
+    {
+      "path": "packages/client-rust/src/services/connect/handler.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "646795ecd5c8ede344fed974d25dc67ffd8f737b",
+      "bytes": 2874,
+      "sha256": "f22ac8b100307c846e1e7d7776860e482e3ba582f3dd82952810e39f2a518418"
+    },
+    {
+      "path": "packages/client-rust/src/services/connect/message.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "f5a8b2a77535a461f73c9f59c2b014520a908b84",
+      "bytes": 6613,
+      "sha256": "67497320e36e0377ba7a756c17581b031f436cca33cf7770062d1cc0a8e580d2"
+    },
+    {
+      "path": "packages/client-rust/src/services/connect/mod.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "8d7533704e85caad569abc8b01aa02ac56702ff0",
+      "bytes": 61,
+      "sha256": "9c02dd130d5b4133714b086348efabffd21c2bba6d0a634ef9880b39eef91707"
+    },
+    {
+      "path": "packages/client-rust/src/services/connect/rpc.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "75054cb02478c0ad1f1f30f940816e0f06f46081",
+      "bytes": 4653,
+      "sha256": "588f3767167a9558ab446350fb2ed14a40d732d22d769b60c6d3522e1d79c5cf"
+    },
+    {
+      "path": "packages/client-rust/src/services/mod.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "a3910fd25fb614c7bcb2aaef26e404133fda965d",
+      "bytes": 66,
+      "sha256": "c951f48d848e2db0b13f9bae11f6999b08a92fdb55af401b42d54855c8bbbf47"
+    },
+    {
+      "path": "packages/client-rust/src/services/monitor/file.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "c735e872c78eac5616dd97c3d23110bdf417db6f",
+      "bytes": 2947,
+      "sha256": "9d8eae35fb4c7b555d9c2c674715e171f8840f82f27e8eb7aad4ec0932398125"
+    },
+    {
+      "path": "packages/client-rust/src/services/monitor/instruction.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "40bf2e6f35583bd3a7797908b14e3c9c07978bda",
+      "bytes": 3403,
+      "sha256": "a9dd4fa0102f7b57aa705ccec5f988c278251bfc78f5110c4f1a32d8f4a15b56"
+    },
+    {
+      "path": "packages/client-rust/src/services/monitor/kws.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "66d80caac095eb589658e637b7d8855a9aa10550",
+      "bytes": 2224,
+      "sha256": "0ba8fe7f8a2adfe6bf9bf62ab93908b1408e3adb6886ff36fb55bd91edb6d392"
+    },
+    {
+      "path": "packages/client-rust/src/services/monitor/mod.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "994c843108f0c398affe4e7639445037b045deb5",
+      "bytes": 65,
+      "sha256": "e5274a3b9e24eae4b187dcdb63e02557fa2fb3efe1aa5af7671b175f26b604a0"
+    },
+    {
+      "path": "packages/client-rust/src/services/monitor/playing.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "3789241a2d25256e5ce036b05e51c3bc172c9a03",
+      "bytes": 2071,
+      "sha256": "70c2595a40451a81efe681b33b3f6b6ebbd7ea2dfb6db04b4c8e0a41ffba1506"
+    },
+    {
+      "path": "packages/client-rust/src/services/speaker.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "4f971412e9f4c7406d03d2e37a340463d7a1ae32",
+      "bytes": 5628,
+      "sha256": "b7d61eb343d62a62ce682bba6145e4baafad4d0cb60e998e1fa9ef7da9ff0b38"
+    },
+    {
+      "path": "packages/client-rust/src/utils/event.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "d02e634e72280f529a93f1174437bc33e067d932",
+      "bytes": 2306,
+      "sha256": "19db5dd009122df28115b49b56beee1bb2b5ef725a73c2882c2ac126f343f72b"
+    },
+    {
+      "path": "packages/client-rust/src/utils/mod.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "de6c9d6ff54594f8b56ab8a11509e7854a5e4e86",
+      "bytes": 58,
+      "sha256": "f8cfaa5ba6554713f783d3999f96df67ede2ca9333957c25210488d3d1c0915b"
+    },
+    {
+      "path": "packages/client-rust/src/utils/rand.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "3081435dd8a49961895d020a55498e8ce1475e90",
+      "bytes": 258,
+      "sha256": "44d94bbd673135673a47df630169904188904b58b286a62816c7b1bbc04f347f"
+    },
+    {
+      "path": "packages/client-rust/src/utils/shell.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "079d9795689238e34d92e33c2e8072b8df330571",
+      "bytes": 709,
+      "sha256": "0b02f66c31ebe6e2a1b621f5cdd1f6223805096e16869818b41311d37db8a01b"
+    },
+    {
+      "path": "packages/client-rust/src/utils/task.rs",
+      "git_mode": "100644",
+      "git_blob_sha1": "a881784a8d72680c3f52ab1244df5eae980b70f7",
+      "bytes": 1452,
+      "sha256": "ce29538b019f5e145a60e8ce83a326f75cd157bee4c9112a32d3a765fa4b5cb6"
+    }
+  ]
+}

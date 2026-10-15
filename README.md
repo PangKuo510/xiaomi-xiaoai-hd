@@ -20,19 +20,26 @@
 - Bootloader 的完整 2 MiB 備份仍有缺口。
 - 尚未安裝或驗證 Open-XiaoAI Client。
 
-目前本倉庫只包含整理後的研究文件，沒有可直接執行的刷寫或安裝方案。不要把 LX06／OH2P 的分區、映像或錄音設定直接套用到 HD。
+本倉庫包含研究文件及固定版本的上游 Client／Server 來源快照；尚無完成 HD 適配、建置或實機驗證的可安裝版本。不要把 LX06／OH2P 的分區、映像或錄音設定直接套用到 HD。
 
 ## 文件
 
 - [硬體與相容性](docs/HD_STATUS.md)
 - [Open-XiaoAI 授權與重用評估](docs/UPSTREAM_LICENSE_REVIEW.md)
 - [開發路線與驗收條件](docs/ROADMAP.md)
+- [Client／Server 共用範圍與 HD 適配清單](docs/HD_ADAPTATION.md)
+- [第三方來源與授權](THIRD_PARTY_NOTICES.md)
+- [逐檔匯入 manifest](docs/upstream-import-manifest.json)
 
 ## 參考專案
 
 [idootop/open-xiaoai](https://github.com/idootop/open-xiaoai) 提供 Client／Server 架構及開源實作參考。上游已於 2026-04-04 歸檔，原教學限 LX06／OH2P，不構成 HD 相容性承諾。
 
-本專案目前沒有匯入上游原始碼；不宣稱已完成 HD 移植。後續每次匯入都必須記錄來源 commit、保留版權／授權文字，並列出 HD 差異。
+已將固定 commit `bc3396c64e2a435f354eb5cb12a203981f1fe422` 的 Client、MiGPT／小智／Gemini Server 範例及原始授權文件存入 [vendor/open-xiaoai](vendor/open-xiaoai/)。共 103 檔、497,737 bytes，逐檔保留來源 blob、SHA-256 與原始 Git mode，未修改上游內容，也未安裝依賴或執行。
+
+上游不是 HD 可直接執行的版本：Server 連線測試會啟動裝置功能，init／boot 腳本也會下載與執行程式。先閱讀適配清單，勿直接執行這些範例。
+
+本地完整性檢查：`python tools/verify_upstream_import.py`。此命令只驗證檔案與 Git 索引，不連線音箱。
 
 ## 資料與授權邊界
 
