@@ -51,13 +51,13 @@ vendor/open-xiaoai/
 
 下一階段把共用的 WebSocket／RPC 保留為 protocol，把 HD 設備行為抽成 adapter：識別、能力查詢、狀態、URL 播放、TTS、事件、capture profile。Vendor 保持原樣，HD adapter 才加入經驗證的方法。
 
-初始能力應限 `get_version`／識別／唯讀狀態；錄音、原始 PCM 播放、原廠前端控制、任意 shell 與開機環境寫入均不預設開放。這是下一階段設計，不是這次已實作的隔離措施。
+初始能力限 `get_version`／`get_model`／`get_status`。現已在獨立的 packages/hd-handshake 與 host/handshake_server.py 實作三項白名單握手，錄音、原始 PCM 播放、原廠前端控制、任意 shell 與開機環境寫入均沒有對應 handler。這個隔離只適用新入口，不適用仍保持原樣的 vendor 範例；尚未在 HD 執行。
 
 ## 驗收順序
 
 1. 離線 manifest、路徑與來源完整性（本次完成）。
-2. 共用 library／Server 建置、協定測試（本次未做）。
-3. 無音訊副作用的 HD 能力握手（未做）。
+2. 上游完整 library／Server 建置尚未做；獨立 HD 握手 Client 已在本地 x86_64 Linux 建置並與 Python Server 測試。
+3. 無音訊副作用的能力握手 mock 測試完成，HD 實機尚未做。
 4. 原生 URL 播放、停止、恢復（未做）。
 5. HD 事件與短錄音適配（未做）。
 6. 長時間資源測試，最後才處理 /data/init.sh（未做）。

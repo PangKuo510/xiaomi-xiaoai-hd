@@ -50,4 +50,4 @@ Fork 不會因上游歸檔而必然失去開發能力，但也不會自動得到
 
 ## 目前落實狀態
 
-依使用者要求，已將固定版本的 Client 與三組 Server 範例存入 vendor/open-xiaoai，保留完整 LICENSE、README 與 agreement.md，並新增逐檔來源／雜湊 manifest 與適配清單。上游檔案未修改；沒有安裝依賴、執行 Client／Server、連線音箱或發布預刷映像。來源整理不表示已完成 HD 移植或釐清附加條款效力。
+依使用者要求，已將固定版本的 Client 與三組 Server 範例存入 vendor/open-xiaoai，保留完整 LICENSE、README 與 agreement.md，並新增逐檔來源／雜湊 manifest 與適配清單。上游檔案未修改，沒有執行上游 Client／Server、連線音箱或發布預刷映像。後續獨立的 HD 握手程式有本地依賴安裝／建置／mock 測試紀錄；這不表示上游完整程式已完成 HD 移植，也不代表已釐清附加條款效力。

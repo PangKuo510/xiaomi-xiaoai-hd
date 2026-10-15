@@ -18,7 +18,7 @@
 
 ## 依賴邊界
 
-Cargo.lock、pnpm-lock.yaml、uv.lock 保留上游解析紀錄，但本次沒有安裝、建置或重散布依賴套件。本文件不是完整依賴 SBOM，也不是宣稱所有傳遞依賴皆為 MIT。
+Cargo.lock、pnpm-lock.yaml、uv.lock 保留上游解析紀錄；vendor 來源整理階段沒有安裝、建置或重散布其依賴。後續獨立 HD 握手程式在自己的 packages/hd-handshake/Cargo.lock 與 host/requirements.txt 記錄依賴，已於開發主機安裝與測試，未向音箱部署。本文件不是完整依賴 SBOM，也不是宣稱所有傳遞依賴皆為 MIT。
 
 發行二進位、容器或安裝套件前，應對實際解析／打包的 Rust、Python、Node 依賴與系統函式庫產出授權清單，保留必要 notices，並檢查任何額外下載的模型與媒體資產。
 

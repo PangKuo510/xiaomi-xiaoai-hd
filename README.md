@@ -20,7 +20,7 @@
 - Bootloader 的完整 2 MiB 備份仍有缺口。
 - 尚未安裝或驗證 Open-XiaoAI Client。
 
-本倉庫包含研究文件及固定版本的上游 Client／Server 來源快照；尚無完成 HD 適配、建置或實機驗證的可安裝版本。不要把 LX06／OH2P 的分區、映像或錄音設定直接套用到 HD。
+本倉庫包含上游來源快照，以及已完成本地 mock 測試的獨立 HD 唯讀握手 v0.1。後者只提供版本、機型、唯讀狀態三項查詢；尚無經 HD ARM32 編譯與實機驗證的可安裝版本。不要把 LX06／OH2P 的分區、映像或錄音設定直接套用到 HD。
 
 ## 文件
 
@@ -30,6 +30,10 @@
 - [Client／Server 共用範圍與 HD 適配清單](docs/HD_ADAPTATION.md)
 - [第三方來源與授權](THIRD_PARTY_NOTICES.md)
 - [逐檔匯入 manifest](docs/upstream-import-manifest.json)
+- [HD 唯讀握手版本與本地重現](docs/HD_HANDSHAKE.md)
+- [握手測試結果](docs/HANDSHAKE_VALIDATION.md)
+- [HD 與 Pro 差異化改機指南](docs/HD_MODDING_GUIDE.md)
+- [隱私與金鑰檢查](docs/PRIVACY_REVIEW.md)
 
 ## 參考專案
 

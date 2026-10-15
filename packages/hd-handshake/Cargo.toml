@@ -1,0 +1,16 @@
+[package]
+name = "hd-handshake"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+futures-util = "0.3"
+serde_json = "1.0"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "process", "io-util", "time"] }
+tokio-tungstenite = "=0.26.2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

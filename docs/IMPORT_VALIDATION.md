@@ -18,7 +18,7 @@
 - NAS 部署、HD 安裝、錄音／播放、驅動或 DSP 相容性。
 - 依賴完整授權 SBOM 與發布產物的授權清單。
 
-本輪環境未提供可直接使用的 cargo，沒有另裝工具鏈。上述來源完整性與語法解析結果不等於建置或端到端成功。
+來源匯入階段沒有使用 Cargo，以上結果仍不等於上游完整程式建置或端到端成功。後續已確認 WSL 有可用 Rust 工具鏈，並完成獨立 HD 握手程式的本地建置／mock 測試，見 [HANDSHAKE_VALIDATION.md](HANDSHAKE_VALIDATION.md)；未建置或執行 vendor 的完整 Client／Server。
 
 ## 重現
 
