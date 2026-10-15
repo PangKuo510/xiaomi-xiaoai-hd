@@ -8,7 +8,7 @@
 
 ## 文件索引
 
-文件以數字排序；`00` 是現況，`01–07` 說明來源、設計與建置，`08–09` 記錄實機結果及下一項測試，`10–11` 收錄隱私與匯入檢查。
+文件以數字排序；`00` 是現況，`01–07` 說明來源、設計與建置，`08–09` 記錄實機結果及下一項測試，`10–11` 收錄隱私與匯入檢查，`12` 說明主板接入與備份門檻。開始主板或韌體操作前，請先讀文件 12。
 
 | 編號 | 文件 | 用途 |
 |---|---|---|
@@ -24,6 +24,7 @@
 | 09 | [原生 URL 短音檔測試方案](docs/09-native-url-playback-plan.md) | 尚待執行的單次、可停止播放測試 |
 | 10 | [隱私檢查](docs/10-privacy-review.md) | 追蹤檔案與 Git 歷史檢查 |
 | 11 | [上游匯入檢查](docs/11-upstream-import-validation.md) | vendor 檔案完整性與來源核對 |
+| 12 | [主板 USB 接入與備份先行](docs/12-board-access-and-backup.md) | 本專案的接入經驗、板次確認與操作前備份要求 |
 
 另見 [第三方授權與來源](THIRD_PARTY_NOTICES.md)、[上游匯入 manifest](docs/upstream-import-manifest.json)、[ARM 工具鏈鎖定資料](docs/arm-toolchain-lock.json) 與 [建置檢查結果](docs/arm-build-inspection.json)。
 
